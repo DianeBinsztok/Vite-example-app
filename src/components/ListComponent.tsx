@@ -18,7 +18,8 @@ function ListComponent(){
         <ul>
             {items.map((item, index) => 
             <li key={index}
-                onClick={(e)=>handleClickEvent(e)}
+            //pas besoin d'appeler la fonction quand on la mentionne, avec les parenthèses: handleClickEvent()
+                onClick={handleClickEvent}
             >
                 {index} - {item}
             </li>)}
