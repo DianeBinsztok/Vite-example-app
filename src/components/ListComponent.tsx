@@ -14,7 +14,7 @@ function ListComponent(){
             {items.map((item, index) => 
             <li key={index}
             className={selectedIndex === index ? "active" : ""}
-            onClick={()=>{setSelectedIndex(selectedIndex=>selectedIndex = index)}}
+            onClick={()=>{setSelectedIndex(index)}}
             >
                 {index} - {item}
             </li>)}
