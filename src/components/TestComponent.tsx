@@ -1,13 +1,8 @@
 function TestComponent() {  
     return (
-      <>
-        <div>
-          <p>
-            Ceci est un test test de création d'un nouveau composant
-          </p>
-        </div>
-      </>
-    )
+        <li>
+            Ceci est à présent un item de liste
+        </li>
+    );
   }
-  
-  export default TestComponent
+  export default TestComponent;

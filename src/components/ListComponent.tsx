@@ -1,12 +1,10 @@
-import TextComponent from './TestComponent';
+const items = ["Pomme", "Poire", "Mangue", "Framboise", "Banane"];
+
 
 function ListComponent(){
     return(
         <ul>
-            <TextComponent/>
-            <TextComponent/>
-            <TextComponent/>
-            <TextComponent/>
+            {items.map(item => <li>{item}</li>)}
         </ul>
 
     );
