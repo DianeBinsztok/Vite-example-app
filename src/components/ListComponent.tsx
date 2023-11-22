@@ -6,7 +6,11 @@ function ListComponent(){
     }
     return(
         <ul>
-            {items.map((item, index) => <li key={index}>{index} - {item}</li>)}
+            {items.map((item, index) => 
+            <li key={index}
+                onClick={()=>console.log(item, "sélectionné")}
+                >
+                {index} - {item}</li>)}
         </ul>
 
     );
