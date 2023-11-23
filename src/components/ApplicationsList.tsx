@@ -1,16 +1,21 @@
 import Application from "./Application";
+/* L'interface Props définira les arguments à donner à l'objet ApplicationsList, et le type de ces arguments'*/
+interface Props{
+    heading:string
+    items:{title:string,company:string,city:string,contract:string,status:string,}[],
+}
+ 
+/* La liste aura un paramètre props, de type Props (il implémente l'interface Props)*/
+function ApplicationsList(props:Props){
 
-/*Pour renseigner un type 'tableau d'objets' en typescript (ici: items), il faut le déstructurer dans les paramètres et typer les propriété de l'objet. Se contenter de la mention 'object[]' ne suffira pas.*/ 
-function ApplicationsList({heading, items}:{heading:string, items:{title:string,company:string,city:string,contract:string,status:string,}[]}){
-
-    if(items.length === 0){
+    if(props.items.length === 0){
         return(<p>La liste est vide pour le moment</p>);
     }
     return(
         <>
-            <h2>{heading}</h2>
+            <h2>{props.heading}</h2>
             <ul>
-                {items.map((item, index) => 
+                {props.items.map((item, index) => 
                 <Application 
                 key={index} 
                 title = {item.title}

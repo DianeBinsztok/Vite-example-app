@@ -1,31 +1,31 @@
 import './App.css'
 import ApplicationsList from './components/ApplicationsList'
 
-let myItems = [
-  {
-      title:"Testeur de matelas",
-      company:"LaBoite",
-      city:"Okinawa",
-      contract:"CDI",
-      status:"À relancer"
-  },
-  {
-      title:"Goûteur de desserts",
-      company:"TheCompany",
-      city:"Bordeaux",
-      contract:"CDD",
-      status:"En cours"
-  },
-  {
-      title:"Câlineur de chiots",
-      company:"Trucmuche",
-      city:"Valence",
-      contract:"CDI",
-      status:"En cours"
-  }
-];
-
 function App() {
+
+  let myItems = [
+    {
+        title:"Testeur de matelas",
+        company:"LaBoite",
+        city:"Okinawa",
+        contract:"CDI",
+        status:"À relancer"
+    },
+    {
+        title:"Goûteur de desserts",
+        company:"TheCompany",
+        city:"Bordeaux",
+        contract:"CDD",
+        status:"En cours"
+    },
+    {
+        title:"Câlineur de chiots",
+        company:"Trucmuche",
+        city:"Valence",
+        contract:"CDI",
+        status:"En cours"
+    }
+  ];
 
   return (
     <>
