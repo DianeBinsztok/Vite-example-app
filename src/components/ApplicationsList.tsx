@@ -2,21 +2,21 @@ import Application from "./Application";
 function ApplicationsList(){
     let applications = [
         {
-            title:"Développeur fullstack JS",
-            company:"Google",
-            city:"Bordeaux",
+            title:"Testeur de matelas",
+            company:"LaBoite",
+            city:"Okinawa",
             contract:"CDI",
             status:"À relancer"
         },
         {
-            title:"Développeur React",
-            company:"Facebook",
+            title:"Goûteur de desserts",
+            company:"TheCompany",
             city:"Bordeaux",
             contract:"CDD",
             status:"En cours"
         },
         {
-            title:"Développeur PHP Wordpress",
+            title:"Câlineur de chiots",
             company:"Trucmuche",
             city:"Valence",
             contract:"CDI",
@@ -28,6 +28,8 @@ function ApplicationsList(){
         return(<p>La liste est vide pour le moment</p>);
     }
     return(
+        <>
+        <h1>Liste des candidatures en cours:</h1>
         <ul>
             {applications.map((application, index) => 
             <Application 
@@ -39,7 +41,7 @@ function ApplicationsList(){
             status = {application.status}/>
             )}
         </ul>
-
+        </>
     );
 }
 export default ApplicationsList;
