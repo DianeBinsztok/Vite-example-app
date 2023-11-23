@@ -1,5 +1,6 @@
 import './App.css'
 import ApplicationsList from './components/ApplicationsList'
+import ListComponent from './components/ListComponent';
 
 function App() {
 
@@ -26,13 +27,16 @@ function App() {
         status:"En cours"
     }
   ];
+  let testItems = ["Pomme","Poire","Mangue","Framboise","Banane"];
 
   return (
     <>
     <h1>Mon appli en React:</h1>
     <ApplicationsList 
     heading="Liste des candidatures en cours:"
-    items = {myItems}/>
+    items = {myItems}
+    />
+    <ListComponent items = {testItems} onSelectItem = {()=>{console.log("Selected!")}}/>
     </>
   )
 }

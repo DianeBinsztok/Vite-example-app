@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import '../styles/listComponent.css';
 
-function ListComponent(){
-    let items = ["Pomme","Poire","Mangue","Framboise","Banane"];
+interface Props{
+    items:string[];
+    onSelectItem:()=>void
+}
+
+function ListComponent({items, onSelectItem}:Props){
     const [selectedIndex, setSelectedIndex] = useState(-1);
 
     
@@ -14,7 +18,12 @@ function ListComponent(){
             {items.map((item, index) => 
             <li key={index}
             className={selectedIndex === index ? "active" : ""}
-            onClick={()=>{setSelectedIndex(index)}}
+            onClick={
+                ()=>{
+                    setSelectedIndex(index);
+                    onSelectItem()
+                }
+            }
             >
                 {index} - {item}
             </li>)}
