@@ -28,7 +28,7 @@ function App() {
     }
   ];
   let testItems = ["Pomme","Poire","Mangue","Framboise","Banane"];
-
+  const handleOnSelectItem = (item:string) => {console.log(item)};
   return (
     <>
     <h1>Mon appli en React:</h1>
@@ -36,7 +36,7 @@ function App() {
     heading="Liste des candidatures en cours:"
     items = {myItems}
     />
-    <ListComponent items = {testItems} onSelectItem = {()=>{console.log("Selected!")}}/>
+    <ListComponent items = {testItems} onSelectItem = {handleOnSelectItem}/>
     </>
   )
 }

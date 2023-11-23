@@ -3,7 +3,7 @@ import '../styles/listComponent.css';
 
 interface Props{
     items:string[];
-    onSelectItem:()=>void
+    onSelectItem:(item:string)=>void
 }
 
 function ListComponent({items, onSelectItem}:Props){
@@ -21,7 +21,7 @@ function ListComponent({items, onSelectItem}:Props){
             onClick={
                 ()=>{
                     setSelectedIndex(index);
-                    onSelectItem()
+                    onSelectItem(item)
                 }
             }
             >
