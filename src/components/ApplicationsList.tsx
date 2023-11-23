@@ -5,17 +5,18 @@ interface Props{
     items:{title:string,company:string,city:string,contract:string,status:string,}[],
 }
  
-/* La liste aura un paramètre props, de type Props (il implémente l'interface Props)*/
-function ApplicationsList(props:Props){
+/* On peut déstructurer l'objet props en {heading, items}. Ainsi, ses propriété sont directement disponibles 
+(sans passer par props.items)*/
+function ApplicationsList({heading, items}:Props){
 
-    if(props.items.length === 0){
+    if(items.length === 0){
         return(<p>La liste est vide pour le moment</p>);
     }
     return(
         <>
-            <h2>{props.heading}</h2>
+            <h2>{heading}</h2>
             <ul>
-                {props.items.map((item, index) => 
+                {items.map((item, index) => 
                 <Application 
                 key={index} 
                 title = {item.title}
