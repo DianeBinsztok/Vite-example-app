@@ -29,18 +29,18 @@ function ApplicationsList(){
     }
     return(
         <>
-        <h1>Liste des candidatures en cours:</h1>
-        <ul>
-            {applications.map((application, index) => 
-            <Application 
-            key={index} 
-            title={application.title}
-            company = {application.company}
-            city = {application.city}
-            contract = {application.contract}
-            status = {application.status}/>
-            )}
-        </ul>
+            <h2>Liste des candidatures en cours:</h2>
+            <ul>
+                {applications.map((application, index) => 
+                <Application 
+                key={index} 
+                title={application.title}
+                company = {application.company}
+                city = {application.city}
+                contract = {application.contract}
+                status = {application.status}/>
+                )}
+            </ul>
         </>
     );
 }

@@ -7,7 +7,6 @@ function Application({title, company, city, contract, status}:{title:string, com
                 <li>{city}</li>
                 <li>{contract}</li>
                 <li>{status}</li>
-
             </ul>
         </li>
 
