@@ -1,13 +1,23 @@
 import './App.css';
-import Button from './components/Button';
+import Box from './components/Box';
 
 function App() {
 
   return (
-  /*Si la valeur de la prop color ne figure pas parmi les choix définis dans Button, la prop prendra sa valeur pas défaut ("normal")*/
-    <Button>
-      Cliquez-moi!
-    </Button>
+    <>
+      <Box 
+        color = {"none"} 
+      />
+      <Box 
+        color = {"none"} 
+      />
+      <Box 
+        color = {"none"} 
+      />
+      <Box 
+        color = {"none"} 
+      />
+    </>
   )
 }
 

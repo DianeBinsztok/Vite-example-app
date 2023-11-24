@@ -1,0 +1,22 @@
+.box{
+    height: 100px;
+    width: 100px;
+}
+.box-red{
+    background-color: red;
+}
+.box-orange{
+    background-color: orange;
+}
+.box-yellow{
+    background-color: yellow;
+}
+.box-lime{
+    background-color: lime;
+}
+.box-green{
+    background-color: green;
+}
+.box-none{
+    background-color: white;
+}
