@@ -1,13 +1,15 @@
+import { ReactNode } from "react";
+
 interface Props{
-    children:string;
+    children:ReactNode;
 }
 
 // Juste un composant qui affiche du texte
 function Message({children}:Props) {  
     return (
-        <p>
+        <div>
             {children}
-        </p>
+        </div>
     );
 }
 export default Message;
