@@ -2,7 +2,7 @@ import "../styles/buttons.css";
 
 interface Props{
     children:string
-    color:string;
+    color?:string;
 }
 
 function Button({children, color}:Props){
