@@ -1,0 +1,16 @@
+.btn{
+    padding: 1em;
+    border-radius: 10%;
+    color:white;
+    font-weight: bold;
+}
+
+.btn-normal{
+    background-color: blue;
+}
+.btn-warning{
+    background-color: orange;
+}
+.btn-delete{
+    background-color: red;
+}
