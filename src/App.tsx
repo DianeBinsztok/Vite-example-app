@@ -1,10 +1,11 @@
-import './App.css'
+import './App.css';
+import "./styles/buttons.css";
 import Button from './components/Button';
 
 function App() {
 
   return (
-    <Button/>
+    <Button text="Cliquez-moi!" color="warning"/>
   )
 }
 
