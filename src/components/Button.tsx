@@ -1,15 +1,15 @@
 import "../styles/buttons.css";
 
 interface Props{
-    text:string;
+    children:string
     color:string;
 }
 
-function Button({text, color}:Props){
+function Button({children, color}:Props){
 
     return(
         <button className={"btn btn-"+color}>
-            {text}
+            {children}
         </button>
 
     );

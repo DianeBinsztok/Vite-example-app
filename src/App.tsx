@@ -5,7 +5,9 @@ import Button from './components/Button';
 function App() {
 
   return (
-    <Button text="Cliquez-moi!" color="warning"/>
+    <Button color="warning">
+      Et voilà le texte!
+    </Button>
   )
 }
 
