@@ -29,6 +29,7 @@ function App() {
   ];
   let testItems = ["Pomme","Poire","Mangue","Framboise","Banane"];
   const handleOnSelectItem = (item:string) => {console.log(item)};
+  
   return (
     <>
     <h1>Mon appli en React:</h1>

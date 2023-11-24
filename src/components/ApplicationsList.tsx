@@ -22,6 +22,8 @@ function ApplicationsList({heading, items}:Props){
                 city = {item.city}
                 contract = {item.contract}
                 status = {item.status}
+                heading = "test"
+                onSelect = {(message:string)=>{console.log(message)}}
                 />
                 )}
             </ul>
