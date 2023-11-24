@@ -1,12 +1,13 @@
 interface Props{
-    text:string;
+    children:string;
 }
 
-function Message({text}:Props) {  
+// Juste un composant qui affiche du texte
+function Message({children}:Props) {  
     return (
         <p>
-            {text}
+            {children}
         </p>
     );
-  }
-  export default Message;
+}
+export default Message;
