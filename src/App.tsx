@@ -5,7 +5,7 @@ function App() {
 
   return (
   /*Si la valeur de la prop color ne figure pas parmi les choix définis dans Button, la prop prendra sa valeur pas défaut ("normal")*/
-    <Button color="warning">
+    <Button>
       Cliquez-moi!
     </Button>
   )
